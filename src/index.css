@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ant-layout{
+background:#000 !important;
+}
+.ant-layout-header{
+background:#000 !important;
+}
+.ant-table-thead > tr > th {
+    background: #070a0a  !important;
+}
+.ant-table {
+    background: #070a0a !important;
+}
+.ant-table-tbody > tr > td {
+    border-bottom: 1px solid #363636 !important;
+}
+.ant-slider-dot-active, .ant-slider-handle, .ant-slider-handle-click-focused, .ant-slider:hover .ant-slider-handle:not(.ant-tooltip-open) {
+    border: none !important;
+}
+.wallet-adapter-button-trigger {
+    background-image: none !important;
+    background: transparent !important;
+    border: 1px solid #434343 !important;
+    border-radius: 2px !important;
+    color: hsla(0,0%,100%,.85) !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    height: 32px !important;
+    line-height: 1.5715 !important;
+    padding: 4px 15px !important;
+    text-align: center !important;
+    touch-action: manipulation !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    white-space: nowrap !important;
+}
+.wallet-adapter-button-trigger:hover {
+    color: #27a4b6 !important;
+    border: 1px solid #27a4b6 !important;
+}

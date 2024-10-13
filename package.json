@@ -1,0 +1,112 @@
+{
+  "name": "Dropcopy-Trade",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://dropcopy.io/trade/",
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "@craco/craco": "^5.6.4",
+    "@ledgerhq/hw-transport-webusb": "^5.41.0",
+    "@openbook-dex/openbook": "^0.0.9",
+    "@solana/spl-name-service": "^0.1.2",
+    "@solana/spl-token": "^0.1.6",
+    "@solana/spl-token-registry": "^0.2.4574",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.35",
+    "@solana/wallet-adapter-wallets": "^0.19.32",
+    "@solana/web3.js": "^1.61.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@tsconfig/node12": "^1.0.7",
+    "@types/bn.js": "^4.11.6",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.4",
+    "@types/react": "^16.9.51",
+    "@types/react-dom": "^16.9.8",
+    "antd": "^5.21.3",
+    "assert": "^2.1.0",
+    "bn.js": "^5.1.3",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "craco-less": "^3.0.1",
+    "file-loader": "^6.2.0",
+    "https-browserify": "^1.0.0",
+    "immutable-tuple": "^0.4.10",
+    "nanoid": "^3.1.22",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "qrcode.react": "^1.0.0",
+    "query-string": "^7.0.1",
+    "react": "^16.13.1",
+    "react-app-rewired": "^2.2.1",
+    "react-async-hook": "^4.0.0",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "^16.13.1",
+    "react-is": "^17.0.1",
+    "react-redux": "^8.0.5",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.2",
+    "stream-http": "^3.2.0",
+    "styled-components": "^5.1.1",
+    "superstruct": "0.8.3",
+    "typescript": "^3.9.7",
+    "url": "^0.11.4"
+  },
+  "scripts": {
+    "predeploy": "git pull --ff-only && yarn && yarn build",
+    "deploy": "gh-pages -d build",
+    "start": "react-app-rewired --openssl-legacy-provider start",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "prettier": "prettier --write src"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "^.+\\.cjs$"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "always",
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@types/ledgerhq__hw-transport": "^4.21.3",
+    "@types/ledgerhq__hw-transport-webusb": "^4.70.1",
+    "gh-pages": "^3.1.0",
+    "git-format-staged": "^2.1.0",
+    "husky": "^4.2.5",
+    "lint-staged": ">=10",
+    "prettier": "^2.0.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,css,md}": "prettier --write"
+  }
+}
