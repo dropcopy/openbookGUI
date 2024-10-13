@@ -1,6 +1,6 @@
-# Serum DEX UI
+# DropCopy UI
 
-An implementation of a UI for the Serum DEX.
+An implementation of a UI for the OpenBook DEX.
 
 ### Running the UI
 
@@ -18,7 +18,7 @@ NOTE: remember to re-build your app before deploying for your referral addresses
 
 ### Add Trading View charts
 
-It is now required to add OHLCV candles built from on chain data using [Bonfida's API](https://docs.bonfida.com). Here is how to do it:
+It is now required to add OHLCV candles built from DropCopy data server:
 
 1. Get access to the [TradingView Charting Library](https://github.com/tradingview/charting_library/) repository. This is a **private repository** and it will **return a 404 if you don't have access to it**. To get access to the repository please refer to [TradingView's website](https://www.tradingview.com/HTML5-stock-forex-bitcoin-charting-library/)
 
@@ -33,10 +33,9 @@ See the [Create React App documentation](https://facebook.github.io/create-react
 
 ---
 
-See [A technical introduction to the Serum DEX](https://docs.google.com/document/d/1isGJES4jzQutI0GtQGuqtrBUqeHxl_xJNXdtOv4SdII/view) to learn more about the Serum DEX.
+See [A technical introduction to the OpenBook DEX](https://docs.google.com/document/d/1isGJES4jzQutI0GtQGuqtrBUqeHxl_xJNXdtOv4SdII/view) to learn more about the OpenBook DEX.
 
-See [serum-js](https://github.com/project-serum/serum-js) for DEX client-side code. Serum DEX UI uses this library.
+See [OpenBook-ts](https://github.com/openbook-dex/openbook-ts) for DEX client-side code. DropCopy UI uses this library.
 
-See [sol-wallet-adapter](https://github.com/project-serum/sol-wallet-adapter) for an explanation of how the Serum DEX UI interacts with wallet services to sign and send requests to the Serum DEX.
+See [sol-wallet-adapter](https://github.com/anza-xyz/wallet-adapter) for an explanation of how the DropCopy UI interacts with wallet services to sign and send requests to the OpenBook DEX.
 
-See [spl-token-wallet](https://github.com/project-serum/spl-token-wallet) for an implementation of such a wallet, live at [sollet.io](https://sollet.io).
